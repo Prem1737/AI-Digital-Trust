@@ -4,21 +4,30 @@
     <title>AI Digital Trust Platform</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>AI Digital Trust Platform</h1>
+<div class="container">
 
-        <input type="text" id="name" placeholder="Enter Name">
+    <h1>AI Digital Trust Platform</h1>
 
-        <button onclick="calculateTrust()">
-            Check Trust Score
-        </button>
+    <input type="number" id="transparency" placeholder="Transparency Score"><br><br>
 
-        <h2 id="result"></h2>
-    </div>
+    <input type="number" id="fairness" placeholder="Fairness Score"><br><br>
 
-    <script src="script.js"></script>
+    <input type="number" id="privacy" placeholder="Privacy Score"><br><br>
+
+    <input type="number" id="security" placeholder="Security Score"><br><br>
+
+    <input type="number" id="explainability" placeholder="Explainability Score"><br><br>
+
+    <button onclick="predict()">Predict Trust Score</button>
+
+    <h2 id="result"></h2>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
